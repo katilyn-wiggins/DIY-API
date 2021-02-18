@@ -1,14 +1,19 @@
-require('dotenv').config();
 const express = require('express')
 const cors = require('cors');
 const app = express();
 
-const port = process.env.PORT || 3000
-
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('is this working Hello World!')
+})
+
+app.get('/jewelry', (req, res) => {
+    res.send('is this working Hello World!')
+})
+
+app.get('/jewelry/:item', (req, res) => {
+    res.send('is this working Hello World!')
 })
 
 module.exports = {
