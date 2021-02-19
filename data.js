@@ -66,3 +66,7 @@ const jewelry = [
         necklace: true,
     }
 ];
+
+module.exports = {
+    jewelry
+};
